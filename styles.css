@@ -347,6 +347,7 @@ html {
     font-size: 14px;
     color: #555;
 }
+/* Container for contact section */
 .contact-container {
     display: flex;
     align-items: center;
@@ -361,7 +362,7 @@ html {
 
 /* Contact content styling */
 .contact-content {
-    max-width: 60%;
+    flex: 1;
     text-align: center;
 }
 
@@ -370,6 +371,7 @@ html {
     width: 100px; /* Adjust size as needed */
     height: auto;
     border-radius: 5px;
+    max-width: 20%; /* Ensure images don't take up too much space */
 }
 
 /* Ensure the section is properly spaced from the top */
