@@ -312,21 +312,3 @@ html {
         transform: translate(0, 0);
     }
 }
-
-/* Ensure individual positioning and animation delay for each image */
-.animated-image:nth-child(1) { animation-delay: 0s; top: 10%; left: 10%; }
-.animated-image:nth-child(2) { animation-delay: 1s; top: 20%; left: 20%; }
-.animated-image:nth-child(3) { animation-delay: 2s; top: 30%; left: 30%; }
-.animated-image:nth-child(4) { animation-delay: 3s; top: 40%; left: 40%; }
-.animated-image:nth-child(5) { animation-delay: 4s; top: 50%; left: 50%; }
-.animated-image:nth-child(6) { animation-delay: 5s; top: 60%; left: 60%; }
-.animated-image:nth-child(7) { animation-delay: 6s; top: 70%; left: 70%; }
-.animated-image:nth-child(8) { animation-delay: 7s; top: 80%; left: 80%; }
-.animated-image:nth-child(9) { animation-delay: 8s; top: 20%; left: 40%; }
-.animated-image:nth-child(10) { animation-delay: 9s; top: 30%; left: 50%; }
-.animated-image:nth-child(11) { animation-delay: 10s; top: 40%; left: 60%; }
-.animated-image:nth-child(12) { animation-delay: 11s; top: 50%; left: 70%; }
-.animated-image:nth-child(13) { animation-delay: 12s; top: 60%; left: 80%; }
-.animated-image:nth-child(14) { animation-delay: 13s; top: 70%; left: 30%; }
-.animated-image:nth-child(15) { animation-delay: 14s; top: 80%; left: 40%; }
-.animated-image:nth-child(16) { animation-delay: 15s; top: 10%; left: 80%; }
