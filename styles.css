@@ -368,9 +368,9 @@ html {
 
 /* Images on the sides */
 .contact-image {
-    width: 100px; /* Adjust size as needed */
+    width: 200px; /* Adjust size as needed */
     height: auto;
-    border-radius: 5px;
+    border-radius: 15px;
     max-width: 20%; /* Ensure images don't take up too much space */
 }
 
