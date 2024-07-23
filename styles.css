@@ -370,8 +370,8 @@ html {
 .contact-image {
     width: 150px; /* Increase size */
     height: auto;
-    border-radius: 5px;
-    max-width: 25%; /* Adjust as needed */
+    border-radius: 15px;
+    max-width: 45%; /* Adjust as needed */
 }
 
 /* Ensure the section is properly spaced from the top */
