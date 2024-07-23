@@ -347,3 +347,58 @@ html {
     font-size: 14px;
     color: #555;
 }
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Contact content styling */
+.contact-content {
+    max-width: 60%;
+    text-align: center;
+}
+
+/* Images on the sides */
+.contact-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Ensure the section is properly spaced from the top */
+#contact {
+    padding-top: 100px; /* Adjust this based on the header height */
+}
+
+/* Optional: Adjust the spacing between the text and the images */
+.contact-container img:first-of-type {
+    margin-right: 20px;
+}
+
+.contact-container img:last-of-type {
+    margin-left: 20px;
+}
+
+/* Make the section responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-content {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .contact-image {
+        margin: 10px 0;
+    }
+}
