@@ -165,18 +165,19 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Timeline styles */
 .timeline {
     background: #f0f0f0;
-    padding: 40px 10px; /* Adjust padding for smaller screens */
+    padding: 60px 20px; /* Padding for larger screens */
     text-align: center;
 }
 
 .timeline-container {
     position: relative;
     width: 100%;
-    max-width: 1000px; /* Adjust max-width for responsiveness */
+    max-width: 1200px; /* Max width for larger screens */
     margin: 0 auto;
-    padding-top: 60px; /* Ensure it's not blocked by the header */
+    padding-top: 80px; /* Ensure it's not blocked by the header */
 }
 
 .timeline-train {
@@ -186,64 +187,151 @@ html {
     display: flex;
     align-items: center;
     animation: moveTrain 10s linear infinite;
-    top: 60px; /* Adjusted for smaller screens */
+    top: 80px; /* Ensure it’s visible below the header */
 }
 
 .train-body {
-    width: 100px; /* Adjust width for smaller screens */
-    height: 40px; /* Adjust height for smaller screens */
+    width: 150px; /* Size for larger screens */
+    height: 50px;
     background: #007bff;
     border-radius: 10px;
     position: relative;
 }
 
 .train-window {
-    width: 20px; /* Adjust width for smaller screens */
-    height: 15px; /* Adjust height for smaller screens */
+    width: 30px; /* Size for larger screens */
+    height: 20px;
     background: #fff;
     border-radius: 5px;
     position: absolute;
-    top: 5px;
+    top: 10px;
 }
 
-.train-window:nth-child(1) { left: 5px; }
-.train-window:nth-child(2) { left: 30px; }
-.train-window:nth-child(3) { left: 55px; }
+.train-window:nth-child(1) { left: 10px; }
+.train-window:nth-child(2) { left: 60px; }
+.train-window:nth-child(3) { left: 110px; }
 
 .train-wheel {
-    width: 15px; /* Adjust width for smaller screens */
-    height: 15px; /* Adjust height for smaller screens */
+    width: 20px; /* Size for larger screens */
+    height: 20px;
     background: #333;
     border-radius: 50%;
     position: absolute;
-    bottom: -5px;
+    bottom: -10px;
 }
 
-.train-wheel:nth-child(1) { left: 10px; }
-.train-wheel:nth-child(2) { left: 60px; }
+.train-wheel:nth-child(1) { left: 20px; }
+.train-wheel:nth-child(2) { left: 120px; }
 
 .timeline-years {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    justify-content: center; /* Center aligns the items */
+    justify-content: space-between;
     position: relative;
-    top: 50px; /* Adjusted for smaller screens */
+    top: 60px;
 }
 
 .year {
-    width: 50px; /* Adjust width for smaller screens */
+    width: 60px; /* Size for larger screens */
     background: #007bff;
     color: #fff;
-    padding: 5px; /* Adjust padding for smaller screens */
+    padding: 10px;
     border-radius: 5px;
     position: relative;
-    margin: 5px; /* Space between years */
 }
 
 /* Animation for the train */
 @keyframes moveTrain {
-    0% { left: -100px; }
+    0% { left: -150px; }
     100% { left: 100%; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .timeline {
+        padding: 40px 10px; /* Adjust padding for tablets */
+    }
+
+    .timeline-container {
+        max-width: 1000px; /* Adjust max-width for tablets */
+        padding-top: 60px; /* Adjust padding */
+    }
+
+    .timeline-train {
+        top: 60px; /* Adjust position for tablets */
+    }
+
+    .train-body {
+        width: 120px; /* Smaller size for tablets */
+        height: 40px;
+    }
+
+    .train-window {
+        width: 20px; /* Smaller size for tablets */
+        height: 15px;
+        top: 5px;
+    }
+
+    .train-wheel {
+        width: 15px; /* Smaller size for tablets */
+        height: 15px;
+        bottom: -5px;
+    }
+
+    .timeline-years {
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center aligns the items */
+        top: 50px; /* Adjusted for tablets */
+    }
+
+    .year {
+        width: 50px; /* Smaller size for tablets */
+        padding: 5px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        padding: 30px 5px; /* Adjust padding for phones */
+    }
+
+    .timeline-container {
+        max-width: 100%; /* Full width for phones */
+        padding-top: 50px; /* Adjust padding */
+    }
+
+    .timeline-train {
+        top: 50px; /* Adjust position for phones */
+    }
+
+    .train-body {
+        width: 100px; /* Smaller size for phones */
+        height: 35px;
+    }
+
+    .train-window {
+        width: 18px; /* Smaller size for phones */
+        height: 12px;
+        top: 4px;
+    }
+
+    .train-wheel {
+        width: 12px; /* Smaller size for phones */
+        height: 12px;
+        bottom: -3px;
+    }
+
+    .timeline-years {
+        flex-wrap: wrap; /* Allows wrapping on phones */
+        justify-content: center; /* Center aligns the items */
+        top: 40px; /* Adjusted for phones */
+    }
+
+    .year {
+        width: 40px; /* Smaller size for phones */
+        padding: 4px;
+        margin: 4px;
+    }
 }
 
 /* Container for images */
