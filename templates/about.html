@@ -1,0 +1,33 @@
+<!-- templates/about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Your Personal Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Welcome to my personal website! Here's a little bit about myself.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in lorem sapien. Phasellus hendrerit faucibus felis, in efficitur quam. Nulla facilisi.</p>
+        <p>Phasellus gravida semper libero, non condimentum risus mattis a. Morbi lobortis ligula at dui porttitor, in molestie erat tincidunt.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

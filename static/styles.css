@@ -1,0 +1,209 @@
+/* Reset default browser styles */
+html, body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../static/images/10181076.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.header-hidden {
+    transform: translateY(-100%);
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navigation styles */
+nav {
+    text-align: center; /* Center align navigation items */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Use flexbox to arrange items in a row */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Space between items */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    display: flex; /* Ensure list items are also flex containers */
+    align-items: center; /* Center the content vertically */
+}
+
+nav ul li a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Adjust font size */
+}
+
+nav ul li a i {
+    font-size: 24px; /* Adjust icon size */
+    margin: 0 10px; /* Space around icons */
+}
+
+nav ul li a:hover {
+    color: #ccc; /* Change color on hover */
+}
+
+nav ul li img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+/* Section styles */
+section {
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    padding: 100px 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Ensure sections are visible and properly spaced */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#home, #about, #contact {
+    padding-top: 100px; /* Adjust this based on the header height */
+}
+
+#home {
+    margin-top: 20px; /* Ensure it’s visible from the start */
+}
+
+#about {
+    margin-top: 300px;
+}
+
+#contact {
+    margin-top: 300px;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Parallax effect */
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Timeline styles */
+.timeline {
+    background: #f0f0f0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.timeline-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px; /* Ensure it's not blocked by the header */
+}
+
+.timeline-train {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    animation: moveTrain 10s linear infinite;
+    top: 80px; /* Ensure it’s visible below the header */
+}
+
+.train-body {
+    width: 150px;
+    height: 50px;
+    background: #007bff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.train-window {
+    width: 30px;
+    height: 20px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+}
+
+.train-window:nth-child(1) { left: 10px; }
+.train-window:nth-child(2) { left: 60px; }
+.train-window:nth-child(3) { left: 110px; }
+
+.train-wheel {
+    width: 20px;
+    height: 20px;
+    background: #333;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+}
+
+.train-wheel:nth-child(1) { left: 20px; }
+.train-wheel:nth-child(2) { left: 120px; }
+
+.timeline-years {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 60px;
+}
+
+.year {
+    width: 60px;
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* Animation for the train */
+@keyframes moveTrain {
+    0% { left: -150px; }
+    100% { left: 100%; }
+}
