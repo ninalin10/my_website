@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'Became the president💼',
         'Opened five-star restaurant',
         'Started my own company! 🚀',
-        'Who knows what’s next? 👀'
+        'Who knows what is next? 👀'
     ];
 
     // Intersection Observer for section animations
