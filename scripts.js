@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('section');
     const years = document.querySelectorAll('.year');
     const anecdotes = [
-        'Started school! 🚂',
-        'Discovered my love for coding! 💻',
-        'Got my first job! 💼',
-        'Moved to a new city! 🌆',
+        'Born a billionare 🚂',
+        'Knew how to code 💻',
+        'Became the president💼',
+        'Opened five-star restaurant',
         'Started my own company! 🚀',
         'Who knows what’s next? 👀'
     ];

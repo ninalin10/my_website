@@ -12,7 +12,7 @@ body {
 
 /* Header styles */
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../static/images/10181076.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('10181076.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -77,32 +77,63 @@ section {
     background-size: cover;
     background-position: center;
     color: #333;
-    padding: 100px 20px;
+    padding: 80px 20px; /* Reduced padding for a tighter layout */
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease, transform 1s ease;
+    text-align: center; /* Center text horizontally */
+    position: relative; /* Allows positioning of child elements */
 }
 
-/* Ensure sections are visible and properly spaced */
 section.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
+/* Improved spacing and text styling */
 #home, #about, #contact {
-    padding-top: 100px; /* Adjust this based on the header height */
+    padding-top: 120px; /* Adjusted for better spacing */
 }
 
 #home {
-    margin-top: 20px; /* Ensure it’s visible from the start */
+    margin-top: 30px; /* Increased margin for spacing */
+    background: #e0f7fa; /* Light background color for contrast */
 }
 
 #about {
-    margin-top: 300px;
+    margin-top: 60px; /* Increased margin for spacing */
+    background: #fff3e0; /* Light background color for contrast */
 }
 
 #contact {
-    margin-top: 300px;
+    margin-top: 60px; /* Increased margin for spacing */
+    background: #e8f5e9; /* Light background color for contrast */
+}
+
+/* Typography enhancements */
+h2 {
+    font-size: 2.5em; /* Larger font size for headings */
+    font-weight: bold; /* Bold headings */
+    margin-bottom: 20px; /* Space below headings */
+}
+
+p {
+    font-size: 1.2em; /* Larger font size for paragraphs */
+    line-height: 1.6; /* Increased line height for readability */
+    margin-bottom: 20px; /* Space below paragraphs */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    section {
+        padding: 60px 10px; /* Reduced padding on smaller screens */
+    }
+    h2 {
+        font-size: 2em; /* Smaller font size on smaller screens */
+    }
+    p {
+        font-size: 1em; /* Smaller font size on smaller screens */
+    }
 }
 
 /* Footer styles */
