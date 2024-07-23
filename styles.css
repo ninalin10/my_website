@@ -351,7 +351,7 @@ html {
 .contact-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* Center items horizontally */
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -368,10 +368,10 @@ html {
 
 /* Images on the sides */
 .contact-image {
-    width: 200px; /* Adjust size as needed */
+    width: 150px; /* Increase size */
     height: auto;
-    border-radius: 15px;
-    max-width: 20%; /* Ensure images don't take up too much space */
+    border-radius: 5px;
+    max-width: 25%; /* Adjust as needed */
 }
 
 /* Ensure the section is properly spaced from the top */
@@ -381,11 +381,11 @@ html {
 
 /* Optional: Adjust the spacing between the text and the images */
 .contact-container img:first-of-type {
-    margin-right: 20px;
+    margin-right: 30px; /* Increase margin if needed */
 }
 
 .contact-container img:last-of-type {
-    margin-left: 20px;
+    margin-left: 30px; /* Increase margin if needed */
 }
 
 /* Make the section responsive */
