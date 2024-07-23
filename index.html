@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Website</title>
+    <link rel="stylesheet" href="../static/styles.css"> <!-- Adjusted path -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Welcome to My Personal Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.instagram.com/ninalin10" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/nina-lin-537577298" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="Lin.Nina.Harvard_College.pdf" target="_blank"><i class="fas fa-file"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="timeline">
+                <div class="timeline-container">
+                    <div class="timeline-train">
+                        <div class="train-body">
+                            <div class="train-window"></div>
+                            <div class="train-window"></div>
+                            <div class="train-window"></div>
+                        </div>
+                        <div class="train-wheel"></div>
+                        <div class="train-wheel"></div>
+                    </div>
+                    <div class="timeline-years">
+                        <div class="year" data-year="2005">2005</div>
+                        <div class="year" data-year="2010">2010</div>
+                        <div class="year" data-year="2015">2015</div>
+                        <div class="year" data-year="2020">2020</div>
+                        <div class="year" data-year="2025">2025</div>
+                        <div class="year" data-year="future">Future</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="home">
+                <h2>About Me</h2>
+                <p>Welcome to my personal website! Here's a little bit about myself.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in lorem sapien. Phasellus hendrerit faucibus felis, in efficitur quam. Nulla facilisi.</p>
+                <p>Phasellus gravida semper libero, non condimentum risus mattis a. Morbi lobortis ligula at dui porttitor, in molestie erat tincidunt.</p>
+            </section>
+
+            <section id="about">
+                <h2>Experience</h2>
+                <p>To be completed</p>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out to me using the contact details below:</p>
+                <ul>
+                    <li>Email: ninalin@college.harvard.edu</li>
+                    <li>Phone: +1 (332) 254-4259</li>
+                </ul>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Optional: JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <!-- Include the scripts.js file -->
+    <script src="scripts.js"></script> <!-- Adjusted path -->
+</body>
+</html>
