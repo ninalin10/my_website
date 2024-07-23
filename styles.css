@@ -5,7 +5,7 @@ html, body, h1, h2, h3, p, ul, li {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lora', serif;
     line-height: 1.6;
     background-color: #f0f0f0;
 }
@@ -237,4 +237,52 @@ html {
 @keyframes moveTrain {
     0% { left: -150px; }
     100% { left: 100%; }
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* Style for individual images */
+.animated-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    animation: fadeInOut 15s linear infinite;
+}
+
+/* Keyframes for fade-in and fade-out effect */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Delay for each image to create a sequential effect */
+.animated-image:nth-child(1) {
+    animation-delay: 0s;
+}
+.animated-image:nth-child(2) {
+    animation-delay: 5s; /* Adjust based on your animation duration */
+}
+.animated-image:nth-child(3) {
+    animation-delay: 10s; /* Adjust based on your animation duration */
 }
