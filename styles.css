@@ -245,10 +245,11 @@ html {
     100% { left: 100%; }
 }
 
+/* Container for images */
 .image-container {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 500px; /* Adjust height as needed */
     overflow: hidden;
 }
 
